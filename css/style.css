@@ -1,0 +1,12 @@
+h1,
+h2,
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: "Mukta", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
