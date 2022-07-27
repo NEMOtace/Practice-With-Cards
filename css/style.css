@@ -39,10 +39,12 @@ h3 {
     padding: 1rem 1.5rem;
     outline: 2px solid hsl(0 1% 38% / 0.3);
     position: sticky;
+    top: 0;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
 }
 
 .header__title {
@@ -141,13 +143,15 @@ h3 {
 
 /* CATEGORY */
 .category {
+    scroll-margin-top: 5rem;
     width: 100%;
     padding: 1.5rem;
+    padding-top: 2rem;
 }
 
 .category__title {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .category__cards {
@@ -156,11 +160,13 @@ h3 {
     justify-content: space-around;
 }
 
+/* CARD */
+
 .card {
     width: 23rem;
     max-width: 100%;
     padding: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     border: 1px var(--color-gray) solid;
     border-radius: 0.3em;
 }
@@ -177,6 +183,8 @@ h3 {
     border-radius: 0.3em;
     object-fit: contain;
 }
+
+/* BUTTON */
 
 .button {
     padding-top: 0.7em;
@@ -204,15 +212,17 @@ h3 {
 .footer {
     width: 100%;
     display: flex;
-    padding: 1.5rem 1.5rem;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    padding: 2rem 1.5rem;
+    flex-flow: column wrap;
+    align-items: center;
     background-color: var(--color-sky);
 }
 
 .footer__copyright {
     color: var(--color-black);
     font-family: "Mukta", Verdana;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
 }
 
 .footer__social-link {
