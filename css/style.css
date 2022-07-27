@@ -1,5 +1,8 @@
 :root {
     --color-gray: hsl(0, 1%, 38%);
+    --color-sky: hsl(186, 100%, 40%);
+    --color-blue: hsl(223, 57%, 40%);
+    --color-black: hsl(0, 0%, 0%);
 }
 
 h1,
@@ -86,5 +89,24 @@ h3 {
 }
 
 .menu__link:hover {
-    color: black;
+    color: var(--color-black);
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    padding: 1.5rem 1.5rem;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: var(--color-sky);
+}
+
+.footer__copyright {
+    color: var(--color-black);
+    font-family: "Mukta", Verdana;
+}
+
+.footer__social-link {
+    color: var(--color-black);
+    font-family: "Mukta", Verdana;
 }
