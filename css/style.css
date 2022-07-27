@@ -1,12 +1,90 @@
+:root {
+    --color-gray: hsl(0, 1%, 38%);
+}
+
 h1,
 h2,
 h3 {
-    font-family: "Roboto", sans-serif;
     font-weight: bold;
 }
 
 p {
-    font-family: "Mukta", sans-serif;
     font-weight: 400;
     font-size: 18px;
+    color: var(--color-gray);
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--color-gray);
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.header {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    outline: 2px solid hsl(0 1% 38% / 0.3);
+    position: sticky;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__title {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.header__title::before {
+    content: "";
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    vertical-align: sub;
+    background-image: url("../assets/img/favicon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header__menu {
+    outline: 2px solid rgba(142, 145, 148, 0.3);
+}
+
+.menu {
+    max-width: 100%;
+    padding: 0.5rem;
+}
+
+.menu__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.menu__item {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.menu__link {
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(0.5rem, 0.8rem + 1vw, 1.1rem);
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: 0.06rem;
+    color: var(--color-gray);
+}
+
+.menu__link:hover {
+    color: black;
 }
