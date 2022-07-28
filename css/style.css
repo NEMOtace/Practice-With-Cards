@@ -221,6 +221,7 @@ h3 {
 .footer__copyright {
     color: var(--color-black);
     font-family: "Mukta", Verdana;
+    text-align: center;
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
 }
