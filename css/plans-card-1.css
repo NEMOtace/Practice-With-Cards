@@ -73,6 +73,7 @@ p {
     padding: 0.7em;
     border-radius: 1.5em;
     box-shadow: 3px 7px 13px -3px var(--button-shadow);
+    text-align: center;
     color: white;
 }
 
@@ -93,4 +94,23 @@ p {
 
 .card__text {
     margin-left: 0.3rem;
+}
+
+/* BACK */
+
+.back {
+    width: 3.2rem;
+    height: 3.2rem;
+    position: fixed;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    margin-top: 1em;
+    margin-left: 1em;
+    border-radius: 50%;
+    background-color: var(--button-color);
+    color: white;
 }
