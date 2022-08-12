@@ -3,11 +3,14 @@
     --color-sky: hsl(186, 100%, 40%);
     --color-blue: hsl(223, 57%, 40%);
     --color-black: hsl(0, 0%, 0%);
+    --title-font: "Roboto", sans-serif;
+    --text-font: "Mukta", Verdana;
 }
 
 h1,
 h2,
 h3 {
+    font-family: var(--title-font, sans-serif);
     font-weight: bold;
 }
 
@@ -86,7 +89,7 @@ h3 {
 }
 
 .menu__link {
-    font-family: "Roboto", sans-serif;
+    font-family: var(--title-font, sans-serif);
     font-size: clamp(0.5rem, 0.8rem + 1vw, 1.1rem);
     font-weight: 700;
     line-height: 1.5rem;
@@ -187,6 +190,7 @@ h3 {
 /* BUTTON */
 
 .button {
+    width: fit-content;
     padding-top: 0.7em;
     padding-bottom: 0.7em;
     padding-left: 4.5em;
@@ -220,7 +224,7 @@ h3 {
 
 .footer__copyright {
     color: var(--color-black);
-    font-family: "Mukta", Verdana;
+    font-family: var(--text-font, verdana);
     text-align: center;
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
@@ -228,5 +232,6 @@ h3 {
 
 .footer__social-link {
     color: var(--color-black);
-    font-family: "Mukta", Verdana;
+    font-family: var(--text-font, verdana);
+    text-decoration: underline;
 }

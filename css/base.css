@@ -1,30 +1,16 @@
 @charset "UTF-8";
 :root {
-    --negro: hsl(0, 0%, 22%);
+    --negro: hsl(0, 0%, 0%);
     --tipo-principal: "Roboto", sans-serif;
     --tipo-secundaria: "Mukta", Verdana;
 }
 
-/* Las adaptamos al modo oscuro */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
-        --negro: hsl(0, 0%, 93%);
-    }
-}
-/* Opcional */
-/* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
-/* Opcional */
-/* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
-/* @media (prefers-reduced-motion: reduce) {
-    * {
-        -webkit-animation: none !important;
-        animation: none !important;
-        -webkit-transition: none !important;
-        transition: none !important;
+      --negro: hsl(0, 0%, 93%);
     }
 } */
 
-/* Reseteamos los margin y paddings de todas las etiquetas */
 * {
     margin: 0;
     padding: 0;
@@ -34,7 +20,6 @@
     vertical-align: baseline;
 }
 
-/* Evitamos problemas con las imagenes */
 img,
 picture,
 video,
@@ -43,14 +28,12 @@ figure {
     max-width: 100%;
     width: 100%;
     display: block;
-    /* opcional */
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: center center;
     object-position: center center;
 }
 
-/* Reseteamos los enlaces para funcionar como cajas... */
 a {
     display: block;
     text-decoration: none;
@@ -58,22 +41,18 @@ a {
     font-size: inherit;
 }
 
-/* ... excepto los que se encuentran en párrafos */
 p a {
     display: inline;
 }
 
-/* Quitamos los puntos de los <li> */
 li {
     list-style-type: none;
 }
 
-/* Configuramos anclas suaves */
 html {
     scroll-behavior: smooth;
 }
 
-/* Desactivamos estilos por defecto de las principales etiquetas de texto */
 h1,
 h2,
 h3,
@@ -106,16 +85,15 @@ q:after {
 }
 
 /* Configuramos el texto que seleccionamos */
-::-moz-selection {
+/* ::-moz-selection {
     background-color: var(--negro);
     color: var(--blanco);
 }
 ::selection {
     background-color: var(--negro);
     color: var(--blanco);
-}
+} */
 
-/* Nivelamos problemas de tipografías y colocación de formularios */
 form,
 input,
 textarea,
@@ -130,13 +108,18 @@ label {
     background-color: transparent;
     color: inherit;
     display: block;
-    /* opcional */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
 
-/* Reseteamos las tablas */
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer;
+}
+
 table,
 tr,
 td {
@@ -144,19 +127,12 @@ td {
     border-spacing: 0;
 }
 
-/* Evitamos problemas con los SVG */
 svg {
     width: 100%;
     display: block;
     fill: currentColor;
 }
 
-/* (Probándolo, no usar en producción) En el caso de añadir una  */
-/* p svg{
-  display: inline;
-  width: initial;
-} */
-/* Configuramos la tipografía para toda la web */
 body {
     min-height: 100vh;
     font-size: 100%;
@@ -164,22 +140,12 @@ body {
     color: var(--negro);
     /* opcional */
     line-height: 1.4em;
-    /* opcional */
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
-    /* opcional */
     font-smooth: always;
-    /* opcional */
     -webkit-font-smoothing: antialiased;
-    /* opcional */
     -moz-osx-font-smoothing: grayscale;
-}
-
-/* Agregado */
-
-p {
-    font-family: var(--tipo-secundaria);
 }
 
 /* p * {
